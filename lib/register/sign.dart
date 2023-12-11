@@ -118,7 +118,7 @@ class person extends StatelessWidget {
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(12))),
                   onPressed: () {
-                    Navigator.push(
+                    Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(
                           builder: (context) => const akk(),
@@ -127,9 +127,9 @@ class person extends StatelessWidget {
                   child: const Text(
                     'Войти',
                     style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 20,
-                    ),
+                        color: Colors.white,
+                        fontSize: 20,
+                        fontWeight: FontWeight.normal),
                   )),
             ),
           ),
