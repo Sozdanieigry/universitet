@@ -22,7 +22,7 @@ class fri extends StatelessWidget {
               Navigator.pushReplacement(
                   context,
                   CupertinoPageRoute(
-                    builder: (context) => even1(),
+                    builder: (context) => const even1(),
                   ));
             },
             icon: const Icon(

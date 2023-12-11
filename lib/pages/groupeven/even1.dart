@@ -132,7 +132,7 @@ class even1 extends StatelessWidget {
                         Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => th(),
+                              builder: (context) => const th(),
                             ));
                       },
                       child: const Text(
@@ -159,7 +159,7 @@ class even1 extends StatelessWidget {
                         Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => fri(),
+                              builder: (context) => const fri(),
                             ));
                       },
                       child: const Text(
@@ -181,7 +181,7 @@ class even1 extends StatelessWidget {
                         Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => sat(),
+                              builder: (context) => const sat(),
                             ));
                       },
                       child: const Text(

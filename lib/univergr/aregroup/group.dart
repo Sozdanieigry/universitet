@@ -370,7 +370,7 @@ class groupare extends StatelessWidget {
                           Navigator.pushReplacement(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => even1(),
+                                builder: (context) => const even1(),
                               ));
                         },
                         child: const Text(
