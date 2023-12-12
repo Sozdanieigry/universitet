@@ -13,9 +13,15 @@ void main() {
 }
 
 // ignore: camel_case_types
-class homelike extends StatelessWidget {
+class homelike extends StatefulWidget {
   const homelike({super.key});
 
+  @override
+  State<homelike> createState() => _homelikeState();
+}
+
+// ignore: camel_case_types
+class _homelikeState extends State<homelike> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

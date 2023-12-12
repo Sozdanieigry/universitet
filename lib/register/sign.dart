@@ -5,6 +5,7 @@ import 'package:unik/main.dart';
 import 'package:unik/news/news.dart';
 import 'package:unik/profil/akk.dart';
 import 'package:unik/register/forgot.dart';
+import 'package:unik/register/notakk.dart';
 
 // ignore: camel_case_types
 class person extends StatelessWidget {
@@ -111,8 +112,8 @@ class person extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.all(0),
-            child: Flexible(
+            padding: const EdgeInsets.only(),
+            child: Expanded(
               flex: 1,
               child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
@@ -134,6 +135,26 @@ class person extends StatelessWidget {
                         fontWeight: FontWeight.normal),
                   )),
             ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(),
+            child: Expanded(
+                flex: 1,
+                child: TextButton(
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const notakk(),
+                          ));
+                    },
+                    child: const Text(
+                      'Нет аккаунта?',
+                      style: TextStyle(
+                          color: Colors.blue,
+                          fontSize: 18,
+                          fontWeight: FontWeight.normal),
+                    ))),
           ),
         ],
       ),
@@ -168,7 +189,7 @@ class person extends StatelessWidget {
                 onPressed: () {},
                 icon: const Icon(
                   Icons.account_circle,
-                  color: Colors.white,
+                  color: Colors.blue,
                 ))
           ],
         ),

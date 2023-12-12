@@ -4,9 +4,14 @@ import 'package:unik/main.dart';
 import 'package:unik/register/sign.dart';
 
 // ignore: camel_case_types
-class newse extends StatelessWidget {
+class newse extends StatefulWidget {
   const newse({super.key});
 
+  @override
+  State<newse> createState() => _newseState();
+}
+
+class _newseState extends State<newse> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -48,68 +53,6 @@ class newse extends StatelessWidget {
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(16),
                                 child: Image.network(
-                                  'https://rguk.ru/upload/iblock/da3/j4eig6w1cq2pzw36b1b07qrrjx4ulnfy/%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F%2012.png',
-                                ),
-                              ),
-                            ),
-                            const Padding(
-                              padding:
-                                  EdgeInsets.only(top: 15, left: 10, right: 10),
-                              child: Text(
-                                  'В нашем Университете состоялось торжественное открытие Летнего многопрофильного университета "Россия-Африка".'),
-                            ),
-                            const Padding(
-                              padding: EdgeInsets.only(
-                                top: 50,
-                                left: 10,
-                              ),
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                children: [
-                                  Flexible(
-                                    flex: 1,
-                                    child: Text(
-                                      '10.12.2023',
-                                      style: TextStyle(
-                                          fontSize: null,
-                                          color: Colors.lightBlue),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            )
-                          ],
-                        )),
-                  )
-                ],
-              ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 20, right: 20, top: 10),
-            child: Flexible(
-              flex: 1,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Flexible(
-                    flex: 1,
-                    child: Container(
-                        width: MediaQuery.of(context).size.width,
-                        height: 380,
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 225, 222, 222),
-                            borderRadius: BorderRadius.circular(16),
-                            border:
-                                Border.all(color: Colors.black, width: 1.5)),
-                        child: Column(
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.only(
-                                  right: 20, left: 20, top: 15),
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.circular(16),
-                                child: Image.network(
                                   'https://rguk.ru/upload/iblock/660/7cd603s48tktto2ycgy139sbyhvirldd/%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F%204%D1%81%D1%81%D1%81.png',
                                 ),
                               ),
@@ -123,68 +66,6 @@ class newse extends StatelessWidget {
                             const Padding(
                               padding: EdgeInsets.only(
                                 top: 35,
-                                left: 10,
-                              ),
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                children: [
-                                  Flexible(
-                                    flex: 1,
-                                    child: Text(
-                                      '07.12.2023',
-                                      style: TextStyle(
-                                          fontSize: null,
-                                          color: Colors.lightBlue),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            )
-                          ],
-                        )),
-                  )
-                ],
-              ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 20, right: 20, top: 10),
-            child: Flexible(
-              flex: 1,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Flexible(
-                    flex: 1,
-                    child: Container(
-                        width: MediaQuery.of(context).size.width,
-                        height: 380,
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 225, 222, 222),
-                            borderRadius: BorderRadius.circular(16),
-                            border:
-                                Border.all(color: Colors.black, width: 1.5)),
-                        child: Column(
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.only(
-                                  right: 20, left: 20, top: 15),
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.circular(16),
-                                child: Image.network(
-                                  'https://rguk.ru/upload/iblock/34d/7o828x3shw17scawf3y2cb2e1k2l9lmv/RGUK_MEDIA-1.jpg',
-                                ),
-                              ),
-                            ),
-                            const Padding(
-                              padding:
-                                  EdgeInsets.only(top: 15, left: 10, right: 10),
-                              child: Text(
-                                  '7 декабря состоялось открытие III Всероссийской научно-практической конференции «Новые подходы 2023», которая проходит 7—8 декабря в стенах нашего университета.'),
-                            ),
-                            const Padding(
-                              padding: EdgeInsets.only(
-                                top: 40,
                                 left: 10,
                               ),
                               child: Row(
@@ -333,6 +214,68 @@ class newse extends StatelessWidget {
               ),
             ),
           ),
+          Padding(
+            padding: const EdgeInsets.only(left: 20, right: 20, top: 10),
+            child: Flexible(
+              flex: 1,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Flexible(
+                    flex: 1,
+                    child: Container(
+                        width: MediaQuery.of(context).size.width,
+                        height: 380,
+                        decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 225, 222, 222),
+                            borderRadius: BorderRadius.circular(16),
+                            border:
+                                Border.all(color: Colors.black, width: 1.5)),
+                        child: Column(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(
+                                  right: 20, left: 20, top: 15),
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(16),
+                                child: Image.network(
+                                  'https://rguk.ru/upload/iblock/34d/7o828x3shw17scawf3y2cb2e1k2l9lmv/RGUK_MEDIA-1.jpg',
+                                ),
+                              ),
+                            ),
+                            const Padding(
+                              padding:
+                                  EdgeInsets.only(top: 15, left: 10, right: 10),
+                              child: Text(
+                                  '7 декабря состоялось открытие III Всероссийской научно-практической конференции «Новые подходы 2023», которая проходит 7—8 декабря в стенах нашего университета.'),
+                            ),
+                            const Padding(
+                              padding: EdgeInsets.only(
+                                top: 40,
+                                left: 10,
+                              ),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Flexible(
+                                    flex: 1,
+                                    child: Text(
+                                      '07.12.2023',
+                                      style: TextStyle(
+                                          fontSize: null,
+                                          color: Colors.lightBlue),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            )
+                          ],
+                        )),
+                  )
+                ],
+              ),
+            ),
+          ),
         ],
       ),
       bottomNavigationBar: BottomAppBar(
@@ -343,7 +286,7 @@ class newse extends StatelessWidget {
             IconButton(
               onPressed: () {},
               icon: const Icon(Icons.assignment),
-              color: Colors.white,
+              color: Colors.blue,
             ),
             IconButton(
               onPressed: () {

@@ -4,9 +4,15 @@ import 'package:unik/news/news.dart';
 import 'package:unik/register/sign.dart';
 
 // ignore: camel_case_types
-class bot extends StatelessWidget {
+class bot extends StatefulWidget {
   const bot({super.key});
 
+  @override
+  State<bot> createState() => _botState();
+}
+
+// ignore: camel_case_types
+class _botState extends State<bot> {
   @override
   Widget build(BuildContext context) {
     return BottomAppBar(
@@ -28,7 +34,7 @@ class bot extends StatelessWidget {
           IconButton(
             onPressed: () {},
             icon: const Icon(Icons.calendar_month_rounded),
-            color: Colors.white,
+            color: Colors.blue,
           ),
           IconButton(
             onPressed: () {
