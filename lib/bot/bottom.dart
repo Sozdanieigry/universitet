@@ -1,7 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:unik/news/news.dart';
 import 'package:unik/register/sign.dart';
 
+// ignore: camel_case_types
 class bot extends StatelessWidget {
   const bot({super.key});
 
@@ -13,7 +15,13 @@ class bot extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushReplacement(
+                  context,
+                  CupertinoPageRoute(
+                    builder: (context) => const newse(),
+                  ));
+            },
             icon: const Icon(Icons.assignment),
             color: Colors.white,
           ),

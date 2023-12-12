@@ -4,6 +4,7 @@ import 'package:flutter/material.dart ';
 import 'package:unik/pages/group/groupeven.dart';
 import 'package:unik/pages/groupeven/even1.dart';
 
+// ignore: camel_case_types
 class groupare extends StatelessWidget {
   const groupare({super.key});
 

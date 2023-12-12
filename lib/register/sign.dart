@@ -2,9 +2,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'package:unik/main.dart';
+import 'package:unik/news/news.dart';
 import 'package:unik/profil/akk.dart';
 import 'package:unik/register/forgot.dart';
 
+// ignore: camel_case_types
 class person extends StatelessWidget {
   const person({super.key});
 
@@ -15,7 +17,7 @@ class person extends StatelessWidget {
       body: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.only(top: 190),
+            padding: const EdgeInsets.only(top: 110),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -141,7 +143,13 @@ class person extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushReplacement(
+                    context,
+                    CupertinoPageRoute(
+                      builder: (context) => const newse(),
+                    ));
+              },
               icon: const Icon(Icons.assignment),
               color: Colors.white,
             ),

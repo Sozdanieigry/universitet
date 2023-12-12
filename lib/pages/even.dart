@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import 'package:unik/main.dart';
 
+// ignore: camel_case_types
 class even extends StatelessWidget {
   const even({super.key});
 

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart ';
 import 'package:unik/main.dart';
 import 'package:unik/univergr/aregroup/group.dart';
 
+// ignore: camel_case_types
 class group extends StatelessWidget {
   const group({super.key});
 

@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart ';
 import 'package:unik/main.dart';
 
+// ignore: camel_case_types
 class groupol extends StatelessWidget {
   const groupol({super.key});
 

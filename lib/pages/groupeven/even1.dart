@@ -10,6 +10,7 @@ import 'package:unik/1kurs%20even/tuesday.dart';
 import 'package:unik/1kurs%20even/wednesday.dart';
 import 'package:unik/univergr/aregroup/group.dart';
 
+// ignore: camel_case_types
 class even1 extends StatelessWidget {
   const even1({super.key});
 

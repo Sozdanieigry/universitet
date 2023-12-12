@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:unik/pages/groupeven/even1.dart';
 
+// ignore: camel_case_types
 class th extends StatelessWidget {
   const th({super.key});
 

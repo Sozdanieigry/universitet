@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// ignore: camel_case_types
 class data extends StatelessWidget {
   const data({super.key});
 
@@ -63,6 +64,40 @@ class data extends StatelessWidget {
                       width: 13,
                     ),
                     Text(
+                      'Логин: ',
+                      style: TextStyle(
+                          fontSize: 20,
+                          color: Colors.black,
+                          fontWeight: FontWeight.normal),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                width: MediaQuery.of(context).size.width,
+                height: 50,
+                margin: const EdgeInsets.only(top: 25, right: 35, left: 35),
+                decoration: BoxDecoration(
+                    color: const Color.fromARGB(255, 225, 222, 222),
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(
+                      color: Colors.black,
+                    )),
+                child: const Row(
+                  children: [
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Icon(
+                      Icons.email,
+                      color: Color.fromARGB(255, 35, 35, 35),
+                      weight: null,
+                      size: 25,
+                    ),
+                    SizedBox(
+                      width: 13,
+                    ),
+                    Text(
                       'Email: ',
                       style: TextStyle(
                           fontSize: 20,
@@ -88,7 +123,7 @@ class data extends StatelessWidget {
                       width: 10,
                     ),
                     Icon(
-                      Icons.person,
+                      Icons.phone_android_outlined,
                       color: Color.fromARGB(255, 35, 35, 35),
                       weight: null,
                       size: 25,
@@ -97,7 +132,7 @@ class data extends StatelessWidget {
                       width: 13,
                     ),
                     Text(
-                      'Email: ',
+                      'Телефон: ',
                       style: TextStyle(
                           fontSize: 20,
                           color: Colors.black,

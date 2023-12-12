@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:unik/profil/data.dart';
 import 'package:unik/register/sign.dart';
 
+// ignore: camel_case_types
 class akk extends StatelessWidget {
   const akk({super.key});
 
@@ -38,7 +39,7 @@ class akk extends StatelessWidget {
           ),
           Padding(
             padding:
-                const EdgeInsets.only(top: 80, left: 35, right: 35, bottom: 15),
+                const EdgeInsets.only(top: 80, left: 30, right: 30, bottom: 15),
             child: Flexible(
               flex: 1,
               child: ElevatedButton(
@@ -52,7 +53,7 @@ class akk extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(context, MaterialPageRoute(
                       builder: (context) {
-                        return data();
+                        return const data();
                       },
                     ));
                   },
@@ -80,7 +81,7 @@ class akk extends StatelessWidget {
           ),
           Padding(
             padding:
-                const EdgeInsets.only(left: 35, right: 35, bottom: 15, top: 10),
+                const EdgeInsets.only(left: 30, right: 30, bottom: 15, top: 10),
             child: Flexible(
               flex: 1,
               child: ElevatedButton(
@@ -116,7 +117,7 @@ class akk extends StatelessWidget {
           ),
           Padding(
             padding:
-                const EdgeInsets.only(left: 35, right: 35, bottom: 15, top: 10),
+                const EdgeInsets.only(left: 30, right: 30, bottom: 15, top: 10),
             child: Flexible(
               flex: 1,
               child: ElevatedButton(
@@ -152,7 +153,7 @@ class akk extends StatelessWidget {
           ),
           Padding(
               padding: const EdgeInsets.only(
-                  left: 35, right: 35, bottom: 15, top: 35),
+                  left: 30, right: 30, bottom: 15, top: 35),
               child: Flexible(
                 flex: 1,
                 child: ElevatedButton(
@@ -167,7 +168,7 @@ class akk extends StatelessWidget {
                       Navigator.pushReplacement(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => person(),
+                            builder: (context) => const person(),
                           ));
                     },
                     child: const Text('Выйти из аккаунта',

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:unik/register/sign.dart';
 
+// ignore: camel_case_types
 class forgot extends StatelessWidget {
   const forgot({super.key});
 
@@ -21,7 +22,7 @@ class forgot extends StatelessWidget {
         ),
         body: Column(children: [
           Padding(
-            padding: const EdgeInsets.only(top: 85),
+            padding: const EdgeInsets.only(top: 30),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -69,6 +70,7 @@ class forgot extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(top: 30),
             child: Container(
+              margin: const EdgeInsets.all(8),
               width: 400,
               height: 50,
               decoration: BoxDecoration(

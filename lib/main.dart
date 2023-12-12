@@ -12,6 +12,7 @@ void main() {
   ));
 }
 
+// ignore: camel_case_types
 class homelike extends StatelessWidget {
   const homelike({super.key});
 
@@ -44,7 +45,7 @@ class homelike extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const SizedBox(
-                height: 600,
+                height: 564,
               ),
               Flexible(
                 flex: 1,
